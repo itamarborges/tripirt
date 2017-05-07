@@ -1,16 +1,28 @@
 import React from 'react';
-import { AppRegistry, View } from 'react-native';
+import { AppRegistry, View, Text } from 'react-native';
 import Header from './src/components/Header';
+import MenuImageButton from './src/components/MenuImageButton';
+import Images from './Images';
 
 const App = () => (
-  <View style={{ flex: 1 }}>
+  <View style={{ flex: 1, backgroundColor:'#f2f2f2' }}>
     <Header headerText={'Home'} />
-    <View style={{ flex: 1, backgroundColor: '#000' }}>  
-    <Text>testando</Text>
+    <View style={{ 
+    	flex: 1, 
+    	justifyContent: 'center', 
+    	paddingTop: 75,
+    	paddingBottom: 25}}>  
+      <View style={{ flexDirection: 'row' }}>
+        <MenuImageButton title={'My Itineraries'} imagePath={Images.my_itineraries_img}/>
+        <MenuImageButton title={'Search Itineraries'} imagePath={Images.search_itineraries_img}/>
+      </View>
+      <View style={{ flexDirection: 'row' }}>
+        <MenuImageButton title={'My Profile'} imagePath={Images.my_profile_img}/>
+        <MenuImageButton title={'My Guides'} imagePath={Images.my_guides_img}/>
+      </View>
     </View>
   </View>
 
 );
 
 AppRegistry.registerComponent('tripirt', () => App);
-

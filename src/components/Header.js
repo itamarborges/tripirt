@@ -17,7 +17,7 @@ const styles = {
 		justifyContent: 'center',
 		alignItems: 'flex-start',
 		height: 60,
-		paddingTop: 15,
+		paddingTop: 0,
 		paddingLeft: 20,
 		position: 'relative'
 

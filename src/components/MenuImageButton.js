@@ -28,13 +28,13 @@ const styles = {
 		backgroundColor: '#f2f2f2',
 		justifyContent: 'center',
 		alignItems: 'center',
-		paddingBottom: 80
+		paddingBottom: 60
 	},
 	textStyle: {
 		paddingTop: 15,
 		fontSize: 20,
 		color: '#000',
-		color: '#4d4d4d
+		color: '#4d4d4d'
 	},
 	thumbnailStyle: {
 		height: 110,
