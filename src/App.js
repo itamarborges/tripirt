@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { View, Text } from 'react-native';
-import Header from './components/Header';
-import MenuImageButton from './components/MenuImageButton';
+import { Header, MenuImageButton } from './components/common';
 import Images from './Images';
 
 class App extends Component {
