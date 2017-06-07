@@ -1,12 +1,14 @@
 import React from 'react';
 import { Text, TouchableOpacity, Image } from 'react-native';
 
-const MenuImageButton = (props) => {
-	const { imagePath, title } = props;
+const MenuImageButton = ({ imagePath, title, onPress }) => {
 	const { textStyle, buttonStyle, thumbnailStyle } = styles;
 
 	return (
-		<TouchableOpacity style={buttonStyle} >
+		<TouchableOpacity
+			onPress={onPress}
+			style={buttonStyle}
+		>
 			<Image
 				style={thumbnailStyle}
 				source={imagePath}
