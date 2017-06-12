@@ -10,5 +10,8 @@ export default {
   my_profile_soon: 'Você poderá editar suas informações pessoais, para facilitar' +
   ' os contatos com os guias de viagem e amigos.',
   my_guides_soon: 'Você poderá criar e manter itinerários, que estarão disponíveis' +
-  ' para compra pelo viajantes.'
+  ' para compra pelo viajantes.',
+    itineraries: 'itinerários',
+    itinerary: 'itinerário',
+    choose_an_itinerary: 'Escolha um itinerário:'
 };

@@ -10,5 +10,7 @@ export default {
   my_profile_soon: 'You\'re going to be able to update your personal information,' +
   ' making it easier to contact with travel guides and friends',
   my_guides_soon: 'You\'re going to be able to create and maintain itineraries,' +
-  ' which are going to be available for purchase by travelers'
+  ' which are going to be available for purchase by travelers',
+  itineraries: 'itineraries',
+  itinerary: 'itinerary'
 };

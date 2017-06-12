@@ -1,0 +1,9 @@
+[
+  {
+    "itineraryId": 1,
+    "itineraryName": "Downtown",
+    "itineraryDuration": "7",
+    "itineraryStops": "3",
+    "cityImage": "porto_alegre.png"
+  }
+]

@@ -4,3 +4,4 @@ export * from './CardSection';
 export * from './Header';
 export * from './MenuImageButton';
 export * from './ModalMessage';
+export * from './CardImageButton';

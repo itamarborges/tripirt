@@ -61,6 +61,8 @@ const styles = {
     backgroundColor: 'rgba(0, 0, 0, 0.75)',
     position: 'relative',
     flex: 1,
+    paddingLeft: 30,
+    paddingRight: 30,
     justifyContent: 'center'
   }
 };

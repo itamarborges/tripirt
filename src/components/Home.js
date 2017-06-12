@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 import { MenuImageButton, ModalMessage } from './common';
 import Images from '../Images';
 import I18n from '../../app/i18n/i18n';
@@ -22,6 +23,11 @@ class Home extends Component {
   showModalGuides() {
     this.setState({ showModal: true, messageModal: I18n.t('my_guides_soon') });
   }
+
+  showCityItineraries() {
+    Actions.cityItineraries();
+  }
+
   render() {
     const { outsideContainer, mainContainer } = styles;
 
@@ -34,6 +40,7 @@ class Home extends Component {
           <MenuImageButton
             title={I18n.t('my_itineraries')}
             imagePath={Images.my_itineraries_img}
+            onPress={this.showCityItineraries.bind(this)}
           />
           <MenuImageButton
             title={I18n.t('search_itineraries')}
