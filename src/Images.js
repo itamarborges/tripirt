@@ -7,7 +7,13 @@ const Images = {
 
     porto_alegre_img: require('./img/porto_alegre.png'),
 
-    downtown_img: require('./img/downtown.png')
+    downtown_img: require('./img/downtown.png'),
+
+    mercado_publico_img: require('./img/MercadoPublico.jpg'),
+    mercado_sao_pedro_img: require('./img/Mercado-SaoPedro.jpg'),
+    theatro_sao_pedro_img: require('./img/TheatroSaoPedro.jpg'),
+    sao_pedro_gasometro_img: require('./img/SaoPedro-Gasometro.jpg'),
+    gasometro_img: require('./img/Gasometro.jpg')
 };
 
 export default Images;

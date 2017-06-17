@@ -12,5 +12,6 @@ export default {
   my_guides_soon: 'You\'re going to be able to create and maintain itineraries,' +
   ' which are going to be available for purchase by travelers',
   itineraries: 'itineraries',
-  itinerary: 'itinerary'
+  itinerary: 'itinerary',
+  choose_an_itinerary: 'Choose an itinerary:'
 };

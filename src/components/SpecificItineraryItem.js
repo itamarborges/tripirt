@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
 import { Text, TouchableWithoutFeedback, View, Image } from 'react-native';
 import { Actions } from 'react-native-router-flux';
+import { connect } from 'react-redux';
+import { selectedItinerary } from '../actions';
 import Images from '../Images';
 import textStyles from '../../app/styles/textstyles';
 
 class SpecificItineraryItem extends Component {
 
   onRowPress() {
+    const { itineraryId, itineraryName } = this.props.itinerary;
 
+    this.props.selectedItinerary({ itineraryId, itineraryName });
+    Actions.itineraryStep({
+      title: `${itineraryName}`
+    });
   }
 
   render() {
@@ -68,4 +75,4 @@ const styles = {
 
 };
 
-export default SpecificItineraryItem;
+export default connect(null, { selectedItinerary })(SpecificItineraryItem);

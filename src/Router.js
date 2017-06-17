@@ -4,6 +4,7 @@ import { Scene, Router } from 'react-native-router-flux';
 import Home from './components/Home';
 import CityItineraries from './components/CityItineraries';
 import SpecificCityItineraries from './components/SpecificCityItineraries';
+import ItineraryStep from './components/ItineraryStep';
 import { COLOR_PRIMARY, COLOR_PRIMARY_DARK } from '../app/styles/common';
 import I18n from '../app/i18n/i18n';
 
@@ -36,6 +37,10 @@ const RouterComponent = () => {
         <Scene
           key="specificCityItineraries"
           component={SpecificCityItineraries}
+        />
+        <Scene
+          key="itineraryStep"
+          component={ItineraryStep}
         />
       </Scene>
     </Router>

@@ -1,0 +1,74 @@
+[
+  {
+    "itineraryStepId": 1,
+    "itineraryStepTitle": "Mercado Público",
+    "itineraryStepType": "Place",
+    "itineraryStepOrder": 1,
+    "itineraryStepOrderSpecific": 1,
+    "itineraryStepDuration": "2h",
+    "itineraryStepImage": "mercado_publico_img",
+    "itineraryStepDescription":
+      "The Porto Alegre Public Market, in downtown Porto Alegre, Brazil, " +
+      "is the city's oldest public market. It also is an important historic " +
+      "landmark and a well known meeting point, with many coffee shops and " +
+      "restaurants."
+  },
+  {
+    "itineraryStepId": 2,
+    "itineraryStepTitle": "Mercado Publico - Teatro São Pedro",
+    "itineraryStepType": "Commute",
+    "itineraryStepOrder": 2,
+    "itineraryStepOrderSpecific": 1,
+    "itineraryStepDuration": "15min",
+    "itineraryStepImage": "mercado_sao_pedro_img",
+    "itineraryStepInstruction": {
+      "1" : "Walk to Borges de Medeiros Avenue.",
+      "2" : "Turn right on 7 de Setembro Street.",
+      "3": "Turn left on General Câmara Street.",
+      "4": "Go ahead until Marechal Deodoro Park."
+    }
+  },
+  {
+    "itineraryStepId": 3,
+    "itineraryStepTitle": "Teatro São Pedro",
+    "itineraryStepType": "Place",
+    "itineraryStepOrder": 3,
+    "itineraryStepOrderSpecific": 2,
+    "itineraryStepDuration": "1h30min",
+    "itineraryStepImage": "theatro_sao_pedro_img",
+    "itineraryStepDescription":
+      "The São Pedro Theatre (Theatro São Pedro in Portuguese) is the oldest " +
+      "theatre in the city of Porto Alegre, the state capital of Rio Grande do " +
+      "Sul, Brazil. Founded in 1858, it quickly became an artistic, social, and " +
+      "political centre in Brazil."
+  },
+  {
+    "itineraryStepId": 4,
+    "itineraryStepTitle": "Teatro São Pedro - Gasômetro",
+    "itineraryStepType": "Commute",
+    "itineraryStepOrder": 4,
+    "itineraryStepOrderSpecific": 2,
+    "itineraryStepDuration": "15min",
+    "itineraryStepImage": "sao_pedro_gasometro_img",
+    "itineraryStepInstruction": {
+      "1" : "Go in direction to General Câmara Street and turn left.",
+      "2" : "Turn left on Riachuelo Street.",
+      "3": "Turn right on General Bento Martins Street.",
+      "4": "Turn left on Maua Avenue and go ahead.",
+    }
+  },
+  {
+    "itineraryStepId": 5,
+    "itineraryStepTitle": "Gasômetro",
+    "itineraryStepType": "Place",
+    "itineraryStepOrder": 5,
+    "itineraryStepOrderSpecific": 3,
+    "itineraryStepDuration": "1h30min",
+    "itineraryStepImage": "gasometro_img",
+    "itineraryStepDescription":
+      "The Usina do Gasômetro is where an old electric industry on the shores " +
+      "of Guaíba lake was located. This place is famous for being one of the " +
+      "best places to see and enjoy the famous and elusive sunset " +
+      "of Porto Alegre."
+  },
+]

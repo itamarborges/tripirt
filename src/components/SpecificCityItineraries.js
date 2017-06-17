@@ -20,7 +20,6 @@ class SpecificCityItineraries extends Component {
 
   render() {
     const { outsideContainer, outsideListView, textStyle } = styles;
-
     return (
       <View style={outsideContainer}>
         <Text style={textStyle}> {I18n.t('choose_an_itinerary')}</Text>

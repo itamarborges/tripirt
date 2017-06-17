@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Text, TouchableWithoutFeedback, View, Image } from 'react-native';
+import { connect } from 'react-redux';
 import { Actions } from 'react-native-router-flux';
+import { selectedCity } from '../actions';
 import Images from '../Images';
 import textStyles from '../../app/styles/textstyles';
 import I18n from '../../app/i18n/i18n';
@@ -8,9 +10,11 @@ import I18n from '../../app/i18n/i18n';
 class ListImageItem extends Component {
 
   onRowPress() {
+    const { cityId, cityName } = this.props.city;
+
+    this.props.selectedCity({ cityId, cityName });
     Actions.specificCityItineraries({
-      city: this.props.city,
-      title: `${this.props.city.cityName}`
+      title: `${cityName}`
     });
   }
 
@@ -79,4 +83,4 @@ const styles = {
 
 };
 
-export default ListImageItem;
+export default connect(null, { selectedCity })(ListImageItem);
