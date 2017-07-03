@@ -13,5 +13,8 @@ export default {
   ' which are going to be available for purchase by travelers',
   itineraries: 'itineraries',
   itinerary: 'itinerary',
-  choose_an_itinerary: 'Choose an itinerary:'
+  choose_an_itinerary: 'Choose an itinerary:',
+  here_i_am: 'Here I am!',
+  next_place: 'Next Place!',
+  finish_itinerary: 'Finish this Itinerary'
 };

@@ -13,12 +13,14 @@ export const selectedCity = ({ cityId, cityName }) => {
   };
 };
 
-export const selectedItinerary = ({ itineraryId, itineraryName }) => {
+export const selectedItinerary = ({ itineraryId, itineraryName, itinerarySteps }) => {
   return {
     type: SELECTED_ITINERARY,
     payload: {
-      selectedIdItinerary: itineraryId,
-      selectedNameItinerary: itineraryName }
+      selectedItineraryId: itineraryId,
+      selectedItineraryName: itineraryName,
+      selectedItinerarySteps: itinerarySteps
+    }
   };
 };
 

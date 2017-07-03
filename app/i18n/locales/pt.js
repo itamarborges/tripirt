@@ -13,5 +13,9 @@ export default {
   ' para compra pelo viajantes.',
     itineraries: 'itinerários',
     itinerary: 'itinerário',
-    choose_an_itinerary: 'Escolha um itinerário:'
+    choose_an_itinerary: 'Escolha um itinerário:',
+    here_i_am: 'Aqui estou!',
+    next_place: 'Próximo lugar!',
+    finish_itinerary: 'Finalizar itinerário'
+
 };

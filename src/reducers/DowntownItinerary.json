@@ -8,25 +8,25 @@
     "itineraryStepDuration": "2h",
     "itineraryStepImage": "mercado_publico_img",
     "itineraryStepDescription":
-      "The Porto Alegre Public Market, in downtown Porto Alegre, Brazil, " +
-      "is the city's oldest public market. It also is an important historic " +
-      "landmark and a well known meeting point, with many coffee shops and " +
-      "restaurants."
+      "O Mercado Público de Porto Alegre, localizado no centro de Porto Alegre, " +
+      "é o mercado público mais velho da cidade. É também um importante ponto de " +
+      "referência e um ponto conhecido de encontro, com muitos restaurantes e " +
+      "cafeterias."
   },
   {
     "itineraryStepId": 2,
-    "itineraryStepTitle": "Mercado Publico - Teatro São Pedro",
+    "itineraryStepTitle": "Mercado Publico - Theatro São Pedro",
     "itineraryStepType": "Commute",
     "itineraryStepOrder": 2,
     "itineraryStepOrderSpecific": 1,
     "itineraryStepDuration": "15min",
     "itineraryStepImage": "mercado_sao_pedro_img",
-    "itineraryStepInstruction": {
-      "1" : "Walk to Borges de Medeiros Avenue.",
-      "2" : "Turn right on 7 de Setembro Street.",
-      "3": "Turn left on General Câmara Street.",
-      "4": "Go ahead until Marechal Deodoro Park."
-    }
+    "itineraryStepInstruction": [
+      { "step" : 0, "content": "1. Caminhe em direção à Av.Borges de Medeiros."},
+      { "step" : 1, "content": "2. Dobre à direita na rua 7 de Setembro."},
+      { "step" : 2, "content": "3. Dobre à esquerda na rua General Câmara."},
+      { "step" : 3, "content": "4. Vá em frente até a praça Marechal Deodoro."}
+    ]
   },
   {
     "itineraryStepId": 3,
@@ -37,10 +37,9 @@
     "itineraryStepDuration": "1h30min",
     "itineraryStepImage": "theatro_sao_pedro_img",
     "itineraryStepDescription":
-      "The São Pedro Theatre (Theatro São Pedro in Portuguese) is the oldest " +
-      "theatre in the city of Porto Alegre, the state capital of Rio Grande do " +
-      "Sul, Brazil. Founded in 1858, it quickly became an artistic, social, and " +
-      "political centre in Brazil."
+      "O Theatro São Pedro é o teatro mais antigo da cidade de Porto Alegre, " +
+      "a capital do estado do Rio Grande do Sul. Fundado em 1858, rapidamente " +
+      "tornou-se um importante ponto artístico, social e político da cidade. "
   },
   {
     "itineraryStepId": 4,
@@ -50,12 +49,12 @@
     "itineraryStepOrderSpecific": 2,
     "itineraryStepDuration": "15min",
     "itineraryStepImage": "sao_pedro_gasometro_img",
-    "itineraryStepInstruction": {
-      "1" : "Go in direction to General Câmara Street and turn left.",
-      "2" : "Turn left on Riachuelo Street.",
-      "3": "Turn right on General Bento Martins Street.",
-      "4": "Turn left on Maua Avenue and go ahead.",
-    }
+    "itineraryStepInstruction": [
+      { "step" : 0, "content": "1. Saia em direção a rua General Câmara Street e vire à esquerda."},
+      { "step" : 1, "content": "2. Vire à esquerda na rua Riachuelo."},
+      { "step" : 2, "content": "3. Vire à direita na rua General Bento Martins."},
+      { "step" : 3, "content": "4. Dobre à esquerda na Av. Maua e siga em frente."}
+    ]
   },
   {
     "itineraryStepId": 5,
@@ -66,9 +65,8 @@
     "itineraryStepDuration": "1h30min",
     "itineraryStepImage": "gasometro_img",
     "itineraryStepDescription":
-      "The Usina do Gasômetro is where an old electric industry on the shores " +
-      "of Guaíba lake was located. This place is famous for being one of the " +
-      "best places to see and enjoy the famous and elusive sunset " +
-      "of Porto Alegre."
+      "A Usina do Gasômetro está localizada onde uma antiga indústria de energia " +
+      "elétrica era situada. Este lugar é famoso por ser um dos melhores locais " +
+      "para ver e admirar o tão famoso pôr do sol de Porto Alegre."
   },
 ]

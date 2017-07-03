@@ -10,7 +10,9 @@ const INITIAL_STATE = {
   selectedNameCity: '',
   selectedNameItinerary: '',
   playingItinerary: false,
-  currentStep: 0
+  currentStep: 0,
+  numberSteps: 0,
+  selectedItinerarySteps: 0 // number of steps from an specific itinerary
  };
 
 export default (state = INITIAL_STATE, action) => {
@@ -23,8 +25,9 @@ export default (state = INITIAL_STATE, action) => {
     case SELECTED_ITINERARY:
       return {
         ...state,
-        selectedIdItinerary: action.payload.selectedIdItinerary,
-        selectedNameItinerary: action.payload.selectedNameItinerary,
+        selectedItineraryId: action.payload.selectedItineraryId,
+        selectedItineraryName: action.payload.selectedItineraryName,
+        selectedItinerarySteps: action.payload.selectedItinerarySteps,
         playingItinerary: true,
         currentStep: 1
        };

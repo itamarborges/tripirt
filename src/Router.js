@@ -1,6 +1,7 @@
 import React from 'react';
 import { StatusBar, View } from 'react-native';
 import { Scene, Router } from 'react-native-router-flux';
+
 import Home from './components/Home';
 import CityItineraries from './components/CityItineraries';
 import SpecificCityItineraries from './components/SpecificCityItineraries';
@@ -28,6 +29,7 @@ const RouterComponent = () => {
           key="home"
           component={Home}
           title="Home"
+          initial
         />
         <Scene
           key="cityItineraries"

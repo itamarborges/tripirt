@@ -84,7 +84,7 @@ const textStyles = {
   },
   buttonText: {
     fontFamily: 'Roboto',
-    fontSize: 9,
+    fontSize: 15,
     letterSpacing: 0.09,
     textAlign: 'left',
     color: '#f8f8f8'
@@ -114,7 +114,7 @@ const textStyles = {
   },
   blackMediumText: {
     fontFamily: 'Roboto',
-    fontSize: 9,
+    fontSize: 18,
     color: colors.greyish_brown
   },
   mobileContentWhiteCenter: {
@@ -132,7 +132,7 @@ const textStyles = {
   },
   blackSmallText: {
     fontFamily: 'Roboto',
-    fontSize: 6,
+    fontSize: 14,
     color: colors.greyish_brown
   },
   greenSmallText: {

@@ -4,7 +4,12 @@ import { CardSection } from './CardSection';
 import { Button } from './Button';
 
 const ModalMessage = ({ title, content, visible, onAccept, textBtn }) => {
-  const { containerStyle, titleTextStyle, textStyle, cardSectionStyle } = styles;
+  const {
+    containerStyle,
+    titleTextStyle,
+    textStyle,
+    cardSectionStyle,
+    btnStyle } = styles;
 
   return (
     <Modal
@@ -27,7 +32,7 @@ const ModalMessage = ({ title, content, visible, onAccept, textBtn }) => {
       </CardSection>
 
       <CardSection>
-        <Button onPress={onAccept}>{textBtn}</Button>
+        <Button onPress={onAccept} btnStyle={btnStyle}>{textBtn}</Button>
       </CardSection>
 
       </View>
@@ -64,6 +69,10 @@ const styles = {
     paddingLeft: 30,
     paddingRight: 30,
     justifyContent: 'center'
+  },
+  btnStyle: {
+    flex: 1,
+    alignSelf: 'stretch',
   }
 };
 
