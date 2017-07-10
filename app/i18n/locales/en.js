@@ -16,5 +16,6 @@ export default {
   choose_an_itinerary: 'Choose an itinerary:',
   here_i_am: 'Here I am!',
   next_place: 'Next Place!',
-  finish_itinerary: 'Finish this Itinerary'
+  finish_itinerary: 'Finish this Itinerary',
+  directions: 'Directions'
 };

@@ -19,7 +19,7 @@ class SpecificItineraryItem extends Component {
 
   render() {
     const { outsideContainer, imageStyle, backdropView, bottomLine } = styles;
-    const { itineraryName } = this.props.itinerary;
+    const { itineraryName, itineraryTotalTime } = this.props.itinerary;
 
     return (
       <TouchableWithoutFeedback onPress={this.onRowPress.bind(this)}>
@@ -33,6 +33,15 @@ class SpecificItineraryItem extends Component {
                 <Text style={textStyles.whiteTitle}>
                   {itineraryName}
                 </Text>
+                <View style={{ flexDirection: 'row' }}>
+                  <Image
+                    style={{ marginLeft: 10, marginRight: 10 }}
+                    source={Images.stopwatch_img}
+                  />
+                  <Text style={textStyles.whiteTitle}>
+                    {itineraryTotalTime}
+                  </Text>
+                </View>
                 </View>
             </View>
           </Image>

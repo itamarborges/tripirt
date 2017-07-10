@@ -133,7 +133,8 @@ const textStyles = {
   blackSmallText: {
     fontFamily: 'Roboto',
     fontSize: 14,
-    color: colors.greyish_brown
+    color: colors.greyish_brown,
+    lineHeight: 21
   },
   greenSmallText: {
     fontFamily: 'Roboto',

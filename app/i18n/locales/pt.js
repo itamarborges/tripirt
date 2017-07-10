@@ -16,6 +16,7 @@ export default {
     choose_an_itinerary: 'Escolha um itinerário:',
     here_i_am: 'Aqui estou!',
     next_place: 'Próximo lugar!',
-    finish_itinerary: 'Finalizar itinerário'
+    finish_itinerary: 'Finalizar itinerário',
+    directions: 'Instruções'
 
 };

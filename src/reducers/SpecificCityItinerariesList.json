@@ -3,6 +3,8 @@
     "itineraryId": 1,
     "itineraryName": "Downtown",
     "itinerarySteps": 5,
+    "itineraryStops": 3,
+    "itineraryTotalTime" : "6h",
     "cityImage": "porto_alegre.png"
   }
 ]

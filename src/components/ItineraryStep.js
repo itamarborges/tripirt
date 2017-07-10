@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
-import { View, Text, Image, Dimensions, Alert } from 'react-native';
+import { View, Text, Image, Dimensions, Alert, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
-import { Button, CardSection } from './common';
+import { Button } from './common';
 import { nextStep } from '../actions';
 import Images from '../Images';
 import textStyles from '../../app/styles/textstyles';
@@ -42,17 +42,18 @@ class ItineraryStep extends Component {
         I18n.t('here_i_am') :
         I18n.t('next_place');
     if (this.props.currentStep === this.props.selectedItinerarySteps) {
-      labelBtn = I18n.t('finish_itinerary')
+      labelBtn = I18n.t('finish_itinerary');
     }
 
     return (
-      <Button
-        onPress={this.onButtonPress.bind(this)}
-        btnStyle={btnStyle}
-        txtStyle={textStyles.buttonText}
-      >
-        {labelBtn}
-      </Button>);
+        <Button
+          onPress={this.onButtonPress.bind(this)}
+          btnStyle={btnStyle}
+          txtStyle={textStyles.buttonText}
+        >
+          {labelBtn}
+        </Button>
+    );
   }
 
   renderContent() {
@@ -73,7 +74,7 @@ class ItineraryStep extends Component {
           <Text
             style={[textStyles.blackSmallText, styles.paddingStyle]}
           >
-            Directions:
+            {I18n.t('directions')}:
           </Text>
           <View>
             {textDirections}
@@ -91,27 +92,38 @@ class ItineraryStep extends Component {
 
   render() {
     const { itineraryStepImage, itineraryStepTitle } = this.state.currentItineraryStep;
-    const { outsideContainer, imgStyle, titleStyle, outsideText } = styles;
+    const {
+      outsideContainer,
+      imgStyle,
+      titleStyle,
+      outsideText,
+      viewBtnStyle } = styles;
 
     return (
-
       <View style={outsideContainer}>
-        <Image
-          style={imgStyle}
-          source={Images[itineraryStepImage]}
-        />
+        <View style={{ flex: 1 }}>
 
-        <Text
-          style={[textStyles.blackMediumText, titleStyle]}
-        >
-          {itineraryStepTitle}
-        </Text>
-        <View style={outsideText} >
-          {this.renderContent()}
+          <Image
+            style={imgStyle}
+            source={Images[itineraryStepImage]}
+          />
+
+          <Text
+            style={[textStyles.blackMediumText, titleStyle]}
+          >
+            {itineraryStepTitle}
+          </Text>
+
+          <View style={outsideText} >
+            <ScrollView>
+            {this.renderContent()}
+            </ScrollView>
+          </View>
         </View>
 
-        {this.renderButton()}
-
+        <View style={viewBtnStyle}>
+          {this.renderButton()}
+        </View>
       </View>
     );
   }
@@ -119,8 +131,8 @@ class ItineraryStep extends Component {
 const styles = {
   outsideContainer: {
     flex: 1,
-    backgroundColor: colors.background_color,
-    paddingTop: 0
+    flexDirection: 'column',
+    backgroundColor: colors.background_color
   },
   imgStyle: {
     height: (SCREEN_WIDTH * 0.75),
@@ -137,15 +149,20 @@ const styles = {
     paddingBottom: 20
   },
   paddingStyle: {
-    paddingBottom: 10
+    padding: 5
+  },
+  viewBtnStyle: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end'
   },
   btnStyle: {
     backgroundColor: colors.color_primary_dark,
-    borderWidth: 0
-  },
+    borderWidth: 0,
+    padding: 10,
+    margin: 10,
+    width: 200
+  }
 };
-
-
 
 const mapStateToProps = state => {
   const { currentStep, selectedItinerarySteps } = state.currentItinerary;

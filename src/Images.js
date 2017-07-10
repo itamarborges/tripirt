@@ -13,7 +13,10 @@ const Images = {
     mercado_sao_pedro_img: require('./img/Mercado-SaoPedro.jpg'),
     theatro_sao_pedro_img: require('./img/TheatroSaoPedro.jpg'),
     sao_pedro_gasometro_img: require('./img/SaoPedro-Gasometro.jpg'),
-    gasometro_img: require('./img/Gasometro.jpg')
+    gasometro_img: require('./img/Gasometro.jpg'),
+    stopwatch_img: require('./img/stopwatch.png'),
+    //white_pin_img: require('./img/white_pin.png'),
+    down_arrow_img: require('./img/down_arrow.png')
 };
 
 export default Images;
