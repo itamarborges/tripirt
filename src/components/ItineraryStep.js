@@ -102,12 +102,10 @@ class ItineraryStep extends Component {
     return (
       <View style={outsideContainer}>
         <View style={{ flex: 1 }}>
-
-          <Image
-            style={imgStyle}
-            source={Images[itineraryStepImage]}
-          />
-
+            <Image
+              style={imgStyle}
+              source={Images[itineraryStepImage]}
+            />
           <Text
             style={[textStyles.blackMediumText, titleStyle]}
           >
@@ -115,8 +113,8 @@ class ItineraryStep extends Component {
           </Text>
 
           <View style={outsideText} >
-            <ScrollView>
-            {this.renderContent()}
+            <ScrollView style={{ flex: 1 }}>
+              {this.renderContent()}
             </ScrollView>
           </View>
         </View>
@@ -135,7 +133,7 @@ const styles = {
     backgroundColor: colors.background_color
   },
   imgStyle: {
-    height: (SCREEN_WIDTH * 0.75),
+    height: (SCREEN_WIDTH * 0.66),
     width: SCREEN_WIDTH
   },
   titleStyle: {
@@ -143,6 +141,7 @@ const styles = {
     paddingTop: 10
   },
   outsideText: {
+    flex: 1,
     paddingLeft: 20,
     paddingRight: 20,
     paddingTop: 10,
@@ -158,9 +157,10 @@ const styles = {
   btnStyle: {
     backgroundColor: colors.color_primary_dark,
     borderWidth: 0,
-    padding: 10,
-    margin: 10,
-    width: 200
+    marginBottom: 10,
+    marginRight: 10,
+    width: 200,
+    borderRadius: 90
   }
 };
 

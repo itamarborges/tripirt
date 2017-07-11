@@ -17,6 +17,11 @@ export default {
     here_i_am: 'Aqui estou!',
     next_place: 'Próximo lugar!',
     finish_itinerary: 'Finalizar itinerário',
-    directions: 'Instruções'
-
+    directions: 'Instruções',
+    rate_this_itinerary: 'Avalie esse itinerário',
+    you_have_finished: 'Você terminou o seguinte itinerário:',
+    how_would_you_rate_this_itinerary: 'Como você avalia esse itinerário?',
+    additional_comment: 'Comentários:',
+    be_aware_receive_updates_until: 'Saiba que você receberá atualizações desse ' +
+      'itinerário até:'
 };

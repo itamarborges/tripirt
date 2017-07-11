@@ -19,7 +19,7 @@ class SpecificItineraryItem extends Component {
 
   render() {
     const { outsideContainer, imageStyle, backdropView, bottomLine } = styles;
-    const { itineraryName, itineraryTotalTime } = this.props.itinerary;
+    const { itineraryName, itineraryTotalTime, itineraryStops } = this.props.itinerary;
 
     return (
       <TouchableWithoutFeedback onPress={this.onRowPress.bind(this)}>
@@ -40,6 +40,13 @@ class SpecificItineraryItem extends Component {
                   />
                   <Text style={textStyles.whiteTitle}>
                     {itineraryTotalTime}
+                  </Text>
+                  <Image
+                    style={{ marginLeft: 10, marginRight: 10 }}
+                    source={Images.white_pin_img}
+                  />
+                  <Text style={textStyles.whiteTitle}>
+                    {itineraryStops}
                   </Text>
                 </View>
                 </View>
