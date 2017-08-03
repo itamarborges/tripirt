@@ -25,11 +25,12 @@ export default (state = INITIAL_STATE, action) => {
     case SELECTED_ITINERARY:
       return {
         ...state,
-        selectedItineraryId: action.payload.selectedItineraryId,
-        selectedItineraryName: action.payload.selectedItineraryName,
+        selectedIdItinerary: action.payload.selectedItineraryId,
+        selectedNameItinerary: action.payload.selectedItineraryName,
         selectedItinerarySteps: action.payload.selectedItinerarySteps,
         playingItinerary: true,
-        currentStep: 1
+        currentStep: 1,
+        expirationDate: action.payload.selectedExpirationDate,
        };
     case NEXT_STEP:
       return { ...state, currentStep: state.currentStep + 1 };

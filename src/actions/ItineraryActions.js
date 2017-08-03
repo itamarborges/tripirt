@@ -13,13 +13,19 @@ export const selectedCity = ({ cityId, cityName }) => {
   };
 };
 
-export const selectedItinerary = ({ itineraryId, itineraryName, itinerarySteps }) => {
+export const selectedItinerary = ({
+  itineraryId,
+  itineraryName,
+  itinerarySteps,
+  expirationDate
+}) => {
   return {
     type: SELECTED_ITINERARY,
     payload: {
       selectedItineraryId: itineraryId,
       selectedItineraryName: itineraryName,
-      selectedItinerarySteps: itinerarySteps
+      selectedItinerarySteps: itinerarySteps,
+      selectedExpirationDate: expirationDate
     }
   };
 };

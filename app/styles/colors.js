@@ -22,7 +22,7 @@ const colors = {
   pinkish_grey: '#bdbdbd',
   white: '#ffffff',
   sun_yellow: '#f8e81c',
-  warm_grey: '#979797',
+  warm_grey: '#d8d8d8',
   color_primary_dark: '#00796b',
   background_color: '#f2f2f2'
 };

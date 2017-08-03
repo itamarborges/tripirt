@@ -16,7 +16,9 @@ const Images = {
     gasometro_img: require('./img/Gasometro.jpg'),
     stopwatch_img: require('./img/stopwatch.png'),
     white_pin_img: require('./img/white_pin.png'),
-    down_arrow_img: require('./img/down_arrow.png')
+    down_arrow_img: require('./img/down_arrow.png'),
+    selected_star_img: require('./img/selectedStar.png'),
+    unselected_star_img: require('./img/unselectedStar.png')
 };
 
 export default Images;

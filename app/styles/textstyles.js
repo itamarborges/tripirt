@@ -109,7 +109,7 @@ const textStyles = {
   },
   greenMediumText: {
     fontFamily: 'Roboto',
-    fontSize: 9,
+    fontSize: 18,
     color: colors.teal
   },
   blackMediumText: {

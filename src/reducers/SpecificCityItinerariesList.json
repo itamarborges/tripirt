@@ -5,6 +5,7 @@
     "itinerarySteps": 5,
     "itineraryStops": 3,
     "itineraryTotalTime" : "6h",
-    "cityImage": "porto_alegre.png"
+    "cityImage": "porto_alegre.png",
+    "expirationDate": "31/12/2017"
   }
 ]

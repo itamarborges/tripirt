@@ -1,7 +1,8 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
-import { View, Text, Image, Dimensions, Alert, ScrollView } from 'react-native';
+import { View, Text, Image, Dimensions, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
+import { Actions } from 'react-native-router-flux';
 import { Button } from './common';
 import { nextStep } from '../actions';
 import Images from '../Images';
@@ -30,7 +31,9 @@ class ItineraryStep extends Component {
     if (this.props.currentStep < this.props.selectedItinerarySteps) {
       this.props.nextStep();
     } else {
-      Alert.alert('Fim do Itinerário');
+       Actions.itineraryRate({
+         title: `${this.props.selectedNameItinerary}`
+       });
     }
   }
 
@@ -165,10 +168,10 @@ const styles = {
 };
 
 const mapStateToProps = state => {
-  const { currentStep, selectedItinerarySteps } = state.currentItinerary;
+  const { currentStep, selectedItinerarySteps, selectedNameItinerary } = state.currentItinerary;
   const itinerarySteps = state.downtownItinerary;
 
-  return { currentStep, itinerarySteps, selectedItinerarySteps };
+  return { currentStep, itinerarySteps, selectedItinerarySteps, selectedNameItinerary };
 };
 
 export default connect(mapStateToProps, { nextStep })(ItineraryStep);

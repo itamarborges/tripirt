@@ -19,9 +19,10 @@ export default {
   finish_itinerary: 'Finish this Itinerary',
   directions: 'Directions',
   rate_this_itinerary: 'Rate this itinerary',
-  you_have_finished: 'You have finished the following itinerary:',
+  you_have_finished: 'You\'ve finished this itinerary.',
   how_would_you_rate_this_itinerary: 'How would you rate this itinerary?',
   additional_comment: 'Adittional Comment:',
   be_aware_receive_updates_until: 'Be aware that you\'re going to receive updates ' +
-    'for this itinerary until:'
+    'for this itinerary until:',
+  done: 'Done!'
 };

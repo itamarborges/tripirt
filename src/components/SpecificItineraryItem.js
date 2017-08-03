@@ -9,9 +9,20 @@ import textStyles from '../../app/styles/textstyles';
 class SpecificItineraryItem extends Component {
 
   onRowPress() {
-    const { itineraryId, itineraryName, itinerarySteps } = this.props.itinerary;
+    const {
+      itineraryId,
+      itineraryName,
+      itinerarySteps,
+      expirationDate
+    } = this.props.itinerary;
 
-    this.props.selectedItinerary({ itineraryId, itineraryName, itinerarySteps });
+    this.props.selectedItinerary({
+      itineraryId,
+      itineraryName,
+      itinerarySteps,
+      expirationDate
+    })
+    ;
     Actions.itineraryStep({
       title: `${itineraryName}`
     });

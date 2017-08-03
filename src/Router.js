@@ -6,6 +6,7 @@ import Home from './components/Home';
 import CityItineraries from './components/CityItineraries';
 import SpecificCityItineraries from './components/SpecificCityItineraries';
 import ItineraryStep from './components/ItineraryStep';
+import ItineraryRate from './components/ItineraryRate';
 import { COLOR_PRIMARY, COLOR_PRIMARY_DARK } from '../app/styles/common';
 import I18n from '../app/i18n/i18n';
 
@@ -43,6 +44,10 @@ const RouterComponent = () => {
         <Scene
           key="itineraryStep"
           component={ItineraryStep}
+        />
+        <Scene
+          key="itineraryRate"
+          component={ItineraryRate}
         />
       </Scene>
     </Router>

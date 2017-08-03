@@ -5,3 +5,5 @@ export * from './Header';
 export * from './MenuImageButton';
 export * from './ModalMessage';
 export * from './CardImageButton';
+export * from './StarRating';
+export * from './Rating';
