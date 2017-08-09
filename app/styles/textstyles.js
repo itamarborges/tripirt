@@ -136,10 +136,14 @@ const textStyles = {
     color: colors.greyish_brown,
     lineHeight: 21
   },
-  greenSmallText: {
+  blackIconText: {
     fontFamily: 'Roboto',
-    fontSize: 6,
-    lineHeight: 10,
+    fontSize: 14,
+    color: colors.greyish_brown,
+  },
+  greenIconText: {
+    fontFamily: 'Roboto',
+    fontSize: 14,
     color: colors.teal
   },
   whiteSmall: {

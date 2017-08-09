@@ -9,7 +9,6 @@ class StarRating extends Component {
 
   render() {
   const { imageStyle } = styles;
-  debugger;
     return (
       <TouchableWithoutFeedback
         onPress={this.pressStar}

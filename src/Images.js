@@ -18,7 +18,15 @@ const Images = {
     white_pin_img: require('./img/white_pin.png'),
     down_arrow_img: require('./img/down_arrow.png'),
     selected_star_img: require('./img/selectedStar.png'),
-    unselected_star_img: require('./img/unselectedStar.png')
+    unselected_star_img: require('./img/unselectedStar.png'),
+
+    gray_man_img: require('./img/grayMan.png'),
+    gray_pin_img: require('./img/grayPin.png'),
+    green_man_img: require('./img/greenMan.png'),
+    green_pin_img: require('./img/greenPin.png'),
+    small_stopwatch_img: require('./img/smallStopwatch.png')
+
+
 };
 
 export default Images;

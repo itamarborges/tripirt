@@ -1,7 +1,7 @@
 [
   {
     "itineraryId": 1,
-    "itineraryName": "Downtown",
+    "itineraryName": "Centro",
     "itinerarySteps": 5,
     "itineraryStops": 3,
     "itineraryTotalTime" : "6h",

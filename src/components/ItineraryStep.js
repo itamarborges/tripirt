@@ -93,8 +93,72 @@ class ItineraryStep extends Component {
       );
   }
 
+  renderLittleMan() {
+    const { itineraryStepType } = this.state.currentItineraryStep;
+    const key = itineraryStepType === 'Commute' ? 'green_man_img' : 'gray_man_img';
+
+    return (
+      <Image
+        style={styles.iconStyle}
+        source={Images[key]}
+      />
+    )
+  }
+
+  renderLittlePin() {
+    const { itineraryStepType } = this.state.currentItineraryStep;
+    const key = itineraryStepType === 'Commute' ? 'gray_pin_img' : 'green_pin_img';
+
+    return (
+      <Image
+        style={[styles.iconStyle, { left: 15 }]}
+        source={Images[key]}
+      />
+    )
+  }
+
+  renderCommuteInformation() {
+    const {
+      itineraryStepType,
+      itineraryStepOrderCommute,
+      itineraryStepTotalCommutes
+    } = this.state.currentItineraryStep;
+    const style =
+    itineraryStepType === 'Commute' ? textStyles.greenIconText : textStyles.blackIconText;
+
+    return (
+      <Text
+        style={[style, { left: 1 }]}
+      >
+        {itineraryStepOrderCommute}/{itineraryStepTotalCommutes}
+      </Text>
+    );
+  }
+
+  renderPlaceInformation() {
+    const {
+      itineraryStepType,
+      itineraryStepOrderPlace,
+      itineraryStepTotalPlaces
+    } = this.state.currentItineraryStep;
+    const style =
+    itineraryStepType !== 'Commute' ? textStyles.greenIconText : textStyles.blackIconText;
+
+    return (
+      <Text
+        style={[style, { left: 16 }]}
+      >
+        {itineraryStepOrderPlace}/{itineraryStepTotalPlaces}
+      </Text>
+    );
+  }
+
   render() {
-    const { itineraryStepImage, itineraryStepTitle } = this.state.currentItineraryStep;
+    const {
+      itineraryStepImage,
+      itineraryStepTitle,
+      itineraryStepDuration
+    } = this.state.currentItineraryStep;
     const {
       outsideContainer,
       imgStyle,
@@ -109,6 +173,32 @@ class ItineraryStep extends Component {
               style={imgStyle}
               source={Images[itineraryStepImage]}
             />
+            <View
+              style={{
+              flexDirection: 'row',
+              paddingLeft: 20,
+              paddingTop: 10,
+              paddingBottom: 5,
+              alignItems: 'flex-end'
+            }}
+            >
+              {this.renderLittleMan()}
+              {this.renderCommuteInformation()}
+
+
+              {this.renderLittlePin()}
+              {this.renderPlaceInformation()}
+
+              <Image
+                style={[styles.iconStyle, { left: 24 }]}
+                source={Images.small_stopwatch_img}
+              />
+              <Text
+                style={[textStyles.blackIconText, { left: 26 }]}
+              >
+                {itineraryStepDuration}
+              </Text>
+            </View>
           <Text
             style={[textStyles.blackMediumText, titleStyle]}
           >
@@ -139,9 +229,17 @@ const styles = {
     height: (SCREEN_WIDTH * 0.66),
     width: SCREEN_WIDTH
   },
+  iconStyle: {
+    height: 22,
+    resizeMode: 'contain'
+  },
+  iconTextStyle: {
+    height: 24,
+    resizeMode: 'contain'
+  },
   titleStyle: {
     paddingLeft: 20,
-    paddingTop: 10
+    paddingTop: 5
   },
   outsideText: {
     flex: 1,

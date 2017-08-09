@@ -57,6 +57,7 @@ class ItineraryRate extends Component {
 
         <TextInput
             multiline
+            editable={false}
             autoCorrect={false}
             onChangeText={(additionalComment) => this.setState({ additionalComment })}
             value={this.state.additionalComment}
@@ -105,13 +106,13 @@ const styles = {
 
   },
   titleStyle: {
-    paddingTop: 50
+    paddingTop: 45
   },
   firstInstructionsStyle: {
-    paddingTop: 35
+    paddingTop: 30
   },
   instructionsStyle: {
-    paddingTop: 20
+    paddingTop: 15
   },
   expirationDateStyle: {
     paddingTop: 10
