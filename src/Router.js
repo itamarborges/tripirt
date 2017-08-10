@@ -2,11 +2,12 @@ import React from 'react';
 import { StatusBar, View } from 'react-native';
 import { Scene, Router } from 'react-native-router-flux';
 
-import Home from './components/Home';
-import CityItineraries from './components/CityItineraries';
-import SpecificCityItineraries from './components/SpecificCityItineraries';
-import ItineraryStep from './components/ItineraryStep';
-import ItineraryRate from './components/ItineraryRate';
+import Home from './screens/Home';
+import CityItineraries from './screens/CityItineraries';
+import SpecificCityItineraries from './screens/SpecificCityItineraries';
+import ItineraryStep from './screens/ItineraryStep';
+import ItineraryRate from './screens/ItineraryRate';
+import SearchItineraries from './screens/SearchItineraries';
 import { COLOR_PRIMARY, COLOR_PRIMARY_DARK } from '../app/styles/common';
 import I18n from '../app/i18n/i18n';
 
@@ -48,6 +49,10 @@ const RouterComponent = () => {
         <Scene
           key="itineraryRate"
           component={ItineraryRate}
+        />
+        <Scene
+          key="searchItineraries"
+          component={SearchItineraries}
         />
       </Scene>
     </Router>

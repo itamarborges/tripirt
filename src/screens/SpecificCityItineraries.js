@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, ListView, Text } from 'react-native';
 import { connect } from 'react-redux';
-import SpecificItineraryItem from './SpecificItineraryItem';
+import SpecificItineraryItem from './../components/SpecificItineraryItem';
 import { BACKGROUND_COLOR } from '../../app/styles/common';
 import I18n from '../../app/i18n/i18n';
 

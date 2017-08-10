@@ -5,7 +5,7 @@ import { Actions } from 'react-native-router-flux';
 import colors from '../../app/styles/colors';
 import I18n from '../../app/i18n/i18n';
 import textStyles from '../../app/styles/textstyles';
-import { Rating, Button } from './common';
+import { Rating, Button } from './../components/common';
 
 class ItineraryRate extends Component {
   state ={

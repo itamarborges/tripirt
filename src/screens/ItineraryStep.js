@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { View, Text, Image, Dimensions, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import { Actions } from 'react-native-router-flux';
-import { Button } from './common';
+import { Button } from './../components/common';
 import { nextStep } from '../actions';
 import Images from '../Images';
 import textStyles from '../../app/styles/textstyles';

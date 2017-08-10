@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import { MenuImageButton, ModalMessage } from './common';
+import { MenuImageButton, ModalMessage } from './../components/common';
 import Images from '../Images';
 import I18n from '../../app/i18n/i18n';
 
@@ -13,7 +13,10 @@ class Home extends Component {
   }
 
   showModalSearch() {
-    this.setState({ showModal: true, messageModal: I18n.t('search_itineraries_soon') });
+    Actions.searchItineraries({
+      title: I18n.t('search_itineraries')
+      }
+    );
   }
 
   showModalProfile() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ListView } from 'react-native';
 import { connect } from 'react-redux';
-import ListImageItem from './ListImageItem';
+import ListImageItem from './../components/ListImageItem';
 import { BACKGROUND_COLOR } from '../../app/styles/common';
 
 class CityItineraries extends Component {
