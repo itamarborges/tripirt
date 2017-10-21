@@ -1,0 +1,7 @@
+What is TripirT?
+
+An application that will provide a way to connect tourists and travel guides, where travel guides will prepare daily itineraries and let them available for tourists, who are going to use the application to buy the itineraries and follow the instructions specified by travel guides. The application will present maps showing directions about how to go to one place to another, best time to arrive and leave the place, which way of transportation is more suitable to use, and how to go back to the place the tourists are staying, based in the itinerary provided by travel guides.
+
+A travel guide will insert informations about all places he wants to consider in his itinerary. He will provide a summary for the itineraries and text and images for each place. After this step, he will organize, day by day, which places he suggest tourists to go, indicating how to go to one place to another. Besides that, he will inform how much he wants to receive per each itinerary.
+
+Tourists will search for itineraries for the cities they are going to visit. They will receive a list sorted by the better rated itineraries by other travelers, and they can select which itineraries they want buy. After buying them, they can use the itineraries whenever they want. Before using the itineraries, the tourist can indicate their home base, that is the place from where they are going to leave and come back every day. So the application will find a way for to go from their home base to the first attraction and from the last attraction of the day to their home base.
